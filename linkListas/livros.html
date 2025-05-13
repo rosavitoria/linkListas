@@ -3,19 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livros prediletos</title>
-</head>
-<body style="font-family: Arial, sans-serif; background-color: rgb(63, 97, 198); margin: 0; padding: 0; color: rgb(0, 0, 0); font-size: 25px;">
-    <a href="index.html" >
-        <img src="img/pag.png" alt="Página Inicial" width="100px" height="alt">
-    </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <br> <br> <br> <br>
-    <h1>Livros que eu gosto.</h1>
-    <h2>Harry Potter<h2>
-    <img src="img/hp.png" alt="Livros, saga harry potter" width="700px" height="">
+    <title>Livros Prediletos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #3f61c6, #7f9df5);
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
 
-    <br>
-    <h2><img src="img/razao.png" alt="A razão do amor" width="250px" height=""></h2>
+        header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 80px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .book-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .book-card img {
+            width: 100%;
+            border-radius: 10px;
+            max-height: 300px;
+            object-fit: cover;
+        }
+
+        .book-title {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            background-color: rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <img src="img/pag.png" alt="Página Inicial">
+        </a>
+    </header>
+
+    <h1>Livros que eu gosto</h1>
+
+    <div class="book-grid">
+        <div class="book-card">
+            <img src="img/estilhaca-me.jpg" alt="Estilhaça-me">
+            <div class="book-title">Estilhaça-me</div>
+        </div>
+        <div class="book-card">
+            <img src="img/caraval.jpg" alt="Caraval">
+            <div class="book-title">Caraval</div>
+        </div>
+        <div class="book-card">
+            <img src="img/principe-coracao.jpg" alt="Príncipe do Coração Partido">
+            <div class="book-title">Príncipe do Coração Partido</div>
+        </div>
+        <div class="book-card">
+            <img src="img/verity.jpg" alt="Verity">
+            <div class="book-title">Verity</div>
+        </div>
+        <div class="book-card">
+            <img src="img/psicose.jpg" alt="Psicose">
+            <div class="book-title">Psicose</div>
+        </div>
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81YOuOGFCJL._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter e a Pedra Filosofal">
+            <div class="book-title">Harry Potter e a Pedra Filosofal</div>
+        </div>
+        <div class="book-card">
+            <img src="img/em-aguas-profundas.jpg.jpg" alt="Em Águas Profundas">
+            <div class="book-title">Em Águas Profundas</div>
+        </div>
+    </div>
+
+    <footer>Feito por 🌹 &copy;</footer>
+
 </body>
-<footer>Feito por 🌹 &copy;</footer>
 </html>
